@@ -33,9 +33,7 @@
 
 ## 方法论
 
-<div align="center">
-  <img src="figures/framework.png" alt="系统架构" width="700">
-</div>
+
 
 MIND 框架由三个核心模块构成：
 
@@ -80,17 +78,11 @@ $$i^* = \arg\max_i \cos(q_t, q_i), \quad a_t^{\text{ref}} = \text{RefInq}(i^*)$$
 
 ### 患者智能体仿真评估
 
-<div align="center">
-  <img src="figures/Patient_Performance.png" alt="患者智能体评估" width="600">
-</div>
-
 患者智能体从信息控制（IC）、响应完整性（RC）、事实冲突率（FC）、拟人度（HL）四个维度评估，经 LLM 评判器与领域专家双重验证。
 
 ### 医生智能体诊断性能
 
-<div align="center">
-  <img src="figures/Doctor_Performance.png" alt="医生智能体评估" width="600">
-</div>
+
 
 MIND 在两种患者模拟器（PsySim-Std 和 PsySim-Adapt）下均取得最优表现：
 
@@ -107,23 +99,13 @@ MIND 在事实一致性（FC）、支撑接地性（SG）、患者忠实度（PF
 
 ### 性能对比
 
-<div align="center">
-  <img src="figures/Performance_Comp_1.png" alt="性能对比" width="600">
-</div>
 
 ### 消融研究
-
-<div align="center">
-  <img src="figures/Ablation_Study_1.png" alt="消融研究" width="600">
-</div>
 
 关键发现：去除 thinking 监督导致最大衰减（F1 下降 ~12–14%）；去除 PRB 导致 F1 下降 ~5–6%；去除回退机制导致 F1 下降 ~3%。
 
 ### 动态轮次预算分析
 
-<div align="center">
-  <img src="figures/Dynamic_Turn_Budget.png" alt="动态轮次预算" width="600">
-</div>
 
 ---
 
